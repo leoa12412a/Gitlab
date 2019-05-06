@@ -73,3 +73,15 @@ Postfix : 是一種MailServer是開放性的Source code
 external_url 'http://192.168.0.1'
 ```
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/lab_url.png)</br></br>
+
+* 啟動gitlab
+
+```
+# gitlab-ctl reconfigure
+```
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_start.PNG)</br></br>
+
+* 如果出現以下錯誤
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/error.PNG)</br></br>
