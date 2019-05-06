@@ -82,6 +82,19 @@ external_url 'http://192.168.0.1'
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_start.PNG)</br></br>
 
-* 如果出現以下錯誤
+* 如果出現以下錯誤，表示需更改server編碼
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/error.PNG)</br></br>
+
+```
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+```
+
+## 3. 管理介面
+
+* 輸入IP ( 如果有輸入port記得加入port ex:192.168.30.1:3000 )
+
+第一次登入先設定密碼 帳號為root
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_first_password.PNG)</br></br>
