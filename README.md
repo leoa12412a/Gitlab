@@ -72,4 +72,4 @@ Postfix : 是一種MailServer是開放性的Source code
 ```
 external_url 'http://192.168.0.1'
 ```
-
+![image](https://github.com/leoa12412a/Gitlab/blob/master/lab_url.png)</br></br>
