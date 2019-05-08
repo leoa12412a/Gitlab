@@ -100,7 +100,9 @@ export LC_ALL=en_US.UTF-8
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_first_password.PNG)</br></br>
 
 
-# Gitlab中文化設定
+# Gitlab管理
+
+## 1. Gitlab中文化設定
 
 gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中文化的修改方式，但是版本是在V9.XXX與這次所安裝的11.10.4相差甚遠，因此推斷9.X後版本官方將語言選項列入標準的gitlab內。
 
@@ -108,3 +110,12 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ch.png)</br></br>
 
+## 2. 建立新的專案
+
+* 新的空白頁
+* 從模組建立
+* 匯入
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new.PNG)</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new1.PNG)</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new2.PNG)</br></br>
