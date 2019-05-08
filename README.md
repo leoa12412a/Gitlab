@@ -110,6 +110,7 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ch.png)</br></br>
 
+
 ## 2. 建立新的專案
 
 * 新的空白頁
@@ -119,3 +120,9 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new.PNG)</br></br>
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new1.PNG)</br></br>
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_new2.PNG)</br></br>
+
+
+## 3. 設置SSH Key
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ssh.PNG)</br></br>
+
