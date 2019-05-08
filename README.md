@@ -108,4 +108,3 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ch.png)</br></br>
 
-![image](http://122.147.213.58:3001/root/gitlab-manage/blob/master/gitlab_new.PNG)</br></br>
