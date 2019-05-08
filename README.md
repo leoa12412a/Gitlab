@@ -98,3 +98,12 @@ export LC_ALL=en_US.UTF-8
 第一次登入先設定密碼 帳號為root
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_first_password.PNG)</br></br>
+
+
+# Gitlab中文化設定
+
+gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中文化的修改方式，但是版本是在V9.XXX與這次所安裝的11.10.4相差甚遠，因此推斷9.X後版本官方將語言選項列入標準的gitlab內。
+
+中文化設定步驟
+
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ch.png)</br></br>
