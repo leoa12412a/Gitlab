@@ -126,3 +126,7 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ssh.PNG)</br></br>
 
+
+# Gitlab CI/CD
+
+
