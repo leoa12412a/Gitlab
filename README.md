@@ -129,4 +129,11 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 # Gitlab CI/CD
 
+## Gitlab CI ( Continuous Integration )
+是GitLab 提供的持續集成服務(從8.0版本之後，GitLab CI已經集成在GitLab中了)，只要在你的倉庫根目錄下創建一個.gitlab-ci.yml 文件， 並為該項目指派一個Runner，當有合併請求或者Push操作時，你寫在.gitlab-ci.yml中的構建腳本就會開始執行。
+
+## GitLab Runner
+是配合GitLab CI進行構建任務的應用程序，GitLab CI負責yml文件中各種階段流程的執行，而GitLab Runner就是具體的負責執行每個階段的腳本執行，一般來說GitLab Runner需要安裝在單獨的機器上通過其提供的註冊操作跟GitLab CI進行綁定，當然，你也可以讓其和GitLab安裝在一起，只是有的情況下，你代碼的構建過程對資源消耗十分嚴重的時候，會拖累GitLab給其他用戶提供政策的Git服務。
+
+
 <a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
