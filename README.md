@@ -129,11 +129,81 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 # Gitlab CI/CD
 
+![image]()</br></br>
+
 ## Gitlab CI ( Continuous Integration )
-是GitLab 提供的持續集成服務(從8.0版本之後，GitLab CI已經集成在GitLab中了)，只要在你的倉庫根目錄下創建一個.gitlab-ci.yml 文件， 並為該項目指派一個Runner，當有合併請求或者Push操作時，你寫在.gitlab-ci.yml中的構建腳本就會開始執行。
+是GitLab 提供的持續集成服務(從8.0版本之後，GitLab CI已經集成在GitLab中了)，只要在你的倉庫根目錄下創建一個.gitlab-ci.yml 文件， 並為該項目指派一個Runner，當有合併請求或者Push操作時，你寫在.gitlab-ci.yml中的構建腳本就會開始執行。Gitlab也常常會配合Docker一起使用，以配合每種測試需要的環境。
+
+懶人包 : Gitlab的自動化測試
 
 ## GitLab Runner
 是配合GitLab CI進行構建任務的應用程序，GitLab CI負責yml文件中各種階段流程的執行，而GitLab Runner就是具體的負責執行每個階段的腳本執行，一般來說GitLab Runner需要安裝在單獨的機器上通過其提供的註冊操作跟GitLab CI進行綁定，當然，你也可以讓其和GitLab安裝在一起，只是有的情況下，你代碼的構建過程對資源消耗十分嚴重的時候，會拖累GitLab給其他用戶提供政策的Git服務。
+
+懶人包 : 幫你跑粽動畫測試的東西，需要註冊
+
+## GitLab CI 使用 Docker 的好處
+不同的項目需要不同的工具，如 nodejs，apache ant，maven 等等，在使用像 Jenkins 這樣的工具時，我必須確保這些工具都已經安裝在伺服器上，這樣很不方便。但若然配合 Docker 來使用，開發人員可以隨便選擇 Docker Hub 上提供的任何工具，而不需要求伺服器管理員在伺服器上作任何設定或安裝。
+Jenkins 也有一個管道插件，它可以與 Docker 一起使用，以達到完全相同的目的。但是需要額外的功夫來整合。若果可以的話我還是喜歡越簡單、越小設定越好。
+雖然我更喜歡使用 GitLab CI，但並不意味著它可以完全取代 Jenkins。Jenkins 提供可配置的用戶界面，可以讓非開發人員例如 QA 等方便地執行部署和整合測試等特定任務。
+
+懶人包 : 一般情況下用Docker比較方便
+
+## Gitlab CI 步驟一 : 註冊一個Gitlab Runner
+
+在Server上安裝Gitlab Runner
+
+在Yum添加gitlab runner 
+```
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash
+```
+
+安裝Runner
+```
+yum install gitlab-ci-multi-runner
+```
+
+到Gitlab上登入管理原取得註冊Runner需要的資訊
+![image]()</br></br>
+
+註冊
+```
+sudo gitlab-runner register
+```
+
+註冊過程
+```
+Running in system-mode.                            
+
+# 請輸入URL
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+http://122.147.213.58:3001/
+
+# 請輸入註冊憑證
+Please enter the gitlab-ci token for this runner:
+KezEDeeRN5z8iwh_
+
+# 請輸入Runner描述
+Please enter the gitlab-ci description for this runner:
+[122-147-213-58.static.sparqnet.net]: this is new runner    
+ 
+# 請輸入此Runner可以執行哪種tag的Project
+Please enter the gitlab-ci tags for this runner (comma separated):
+my-tag  
+
+# 是否可以執行沒有tag的project
+Whether to run untagged builds [true/false]:
+[false]: true    
+
+# 是否只執行當前的project
+Whether to lock Runner to current project [true/false]:
+[false]: false  
+
+# 為Runner選一格執行器
+Please enter the executor: docker-ssh, parallels, ssh, virtualbox, docker-ssh+machine, kubernetes, docker, shell, docker+machine:
+
+
+```
+
 
 
 <a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
