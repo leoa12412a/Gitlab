@@ -129,7 +129,7 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 # Gitlab CI/CD
 
-![image]()</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/git_ci_cd.png)</br></br>
 
 ## Gitlab CI ( Continuous Integration )
 是GitLab 提供的持續集成服務(從8.0版本之後，GitLab CI已經集成在GitLab中了)，只要在你的倉庫根目錄下創建一個.gitlab-ci.yml 文件， 並為該項目指派一個Runner，當有合併請求或者Push操作時，你寫在.gitlab-ci.yml中的構建腳本就會開始執行。Gitlab也常常會配合Docker一起使用，以配合每種測試需要的環境。
@@ -200,10 +200,30 @@ Whether to lock Runner to current project [true/false]:
 
 # 為Runner選一格執行器
 Please enter the executor: docker-ssh, parallels, ssh, virtualbox, docker-ssh+machine, kubernetes, docker, shell, docker+machine:
-
+shell
 
 ```
 
+在Project建立一個.gitlab-ci.yml並測試邏輯
 
+![image]()</br></br>
+
+```
+# 开始运行之前的操作
+before_script:
+  - echo 'runner begin'
+
+# 增加名为php-syn-check的任务
+php-syn-check:
+  tags: # 指定使用有 my-tag 标签的runner运行该任务
+    - my-tag
+  script: # 任务运行的命令，原理是遍历所有php文件，依次执行 php -l进行语法检测
+  - echo 'I am testing'
+
+```
+
+撰寫好.gitlab-ci.yml會自動執行，檢視一下剛剛編輯的結果
+
+![image]()</br></br>
 
 <a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
