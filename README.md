@@ -126,7 +126,7 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_ssh.PNG)</br></br>
 
-
+<br><br><br>
 # Gitlab CI/CD
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/git_ci_cd.png)</br></br>
@@ -163,7 +163,7 @@ yum install gitlab-ci-multi-runner
 ```
 
 到Gitlab上登入管理原取得註冊Runner需要的資訊
-![image]()</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/re_runner_on_web.png)</br></br>
 
 註冊
 ```
@@ -206,7 +206,7 @@ shell
 
 在Project建立一個.gitlab-ci.yml並測試邏輯
 
-![image]()</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/add_gitlab-ci.png)</br></br>
 
 ```
 # 开始运行之前的操作
@@ -224,6 +224,6 @@ php-syn-check:
 
 撰寫好.gitlab-ci.yml會自動執行，檢視一下剛剛編輯的結果
 
-![image]()</br></br>
+![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_test.png)</br></br>
 
 <a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
