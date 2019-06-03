@@ -144,7 +144,7 @@ gitlab有內建的語言選項，並且持續翻譯中，原本爬文尋找中�
 ## GitLab CI 使用 Docker 的好處
 不同的項目需要不同的工具，如 nodejs，apache ant，maven 等等，在使用像 Jenkins 這樣的工具時，我必須確保這些工具都已經安裝在伺服器上，這樣很不方便。但若然配合 Docker 來使用，開發人員可以隨便選擇 Docker Hub 上提供的任何工具，而不需要求伺服器管理員在伺服器上作任何設定或安裝。
 Jenkins 也有一個管道插件，它可以與 Docker 一起使用，以達到完全相同的目的。但是需要額外的功夫來整合。若果可以的話我還是喜歡越簡單、越小設定越好。
-雖然我更喜歡使用 GitLab CI，但並不意味著它可以完全取代 Jenkins。Jenkins 提供可配置的用戶界面，可以讓非開發人員例如 QA 等方便地執行部署和整合測試等特定任務。
+雖然我更喜歡使用 GitLab CI，但並不意味著它可以完全取代 Jenkins。Jenkins 提供可配置的用戶界面，可以讓非開發人員例如 QA 等方便地執行部署和整合測試等特定任務。<a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
 
 懶人包 : 一般情況下用Docker比較方便
 
@@ -226,4 +226,4 @@ php-syn-check:
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_test.png)</br></br>
 
-<a href="https://github.com/leoa12412a/Docker/blob/master/README.md">How to install Docker on centos</a>
+
