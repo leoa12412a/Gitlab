@@ -226,4 +226,35 @@ php-syn-check:
 
 ![image](https://github.com/leoa12412a/Gitlab/blob/master/gitlab_test.png)</br></br>
 
+## Gitlab CD 自動部屬
 
+gitlab CD 的自動部屬也是需要撰寫在.gitlab-ci.yml內，由於註冊的時候我們是選擇shell，所以這邊我們也使用shell檔來進行部屬，因此我們需要撰寫一個.sh的部屬方式
+
+1.先查看執行shell檔的使用者
+```
+whoami
+```
+
+2.把部屬位置的給予使用者
+```
+chown -R gitlab-runner:gitlab-runner /var/www/html
+```
+
+3.登入gitlab-runner並建立金鑰，並將SSH公鑰存入gitlab內
+```
+[root@122-147-213-58 test_gitlab_ci]# sudo su - gitlab-runner
+
+[gitlab-runner@122-147-213-58 ~]$ ssh-keygen -t rsa
+
+```
+
+4.撰寫Shell檔
+```
+cd /var/www/html/test_gitlab_ci
+ll
+git pull
+git log
+```
+
+5.查看結果
+![image](https://github.com/leoa12412a/Gitlab/blob/master/sh_isok.PNG)</br></br>
