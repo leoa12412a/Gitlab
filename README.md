@@ -148,7 +148,7 @@ Jenkins 也有一個管道插件，它可以與 Docker 一起使用，以達到�
 
 懶人包 : 一般情況下用Docker比較方便
 
-## Gitlab CI 步驟一 : 註冊一個Gitlab Runner
+## Gitlab CI : 註冊一個Gitlab Runner
 
 在Server上安裝Gitlab Runner
 
